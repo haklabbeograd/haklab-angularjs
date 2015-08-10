@@ -7,6 +7,10 @@ app.config(function($routeProvider){
       controller: 'MainController',
       templateUrl: 'views/home.html'
     })
+    .when('/add',{
+      controller: 'AddController',
+      templateUrl: 'views/add.html'
+    })
     .otherwise('/');
 
 });

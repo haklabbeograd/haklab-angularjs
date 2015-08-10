@@ -1,4 +1,4 @@
-angular.module('haklab').controller('MainController',function($scope){
-  $scope.hello = "Hello world";
+angular.module('haklab').controller('MainController',function($scope,BackendService){
+  $scope.users = BackendService.users;
 
 });

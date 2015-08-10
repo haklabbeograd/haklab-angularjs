@@ -1,4 +1,4 @@
-angular.module('haklab').service('BackendService', function($firebaseArray, $firebaseAuth, $filter){
+angular.module('haklab').service('BackendService', function($firebaseArray, $firebaseAuth, $filter, $location){
     var self = this;
     var ref = new Firebase("https://hklbgd.firebaseio.com/users");
     var auth = $firebaseAuth(ref);
@@ -19,12 +19,24 @@ angular.module('haklab').service('BackendService', function($firebaseArray, $fir
       }).catch(function(error) {
         console.log("Authentication failed:", error);
       });
+    }
+
+    this.addUser = function(user){
+        self.users.$add({
+            id: new Date().getTime(),
+            name: user.ime,
+            imageUrl: "https://avatars3.githubusercontent.com/u/742092?v=3&s=200",
+            date: user.datum
+        });
+
+        $location.path('/');
 
     }
 
     return {
       prijaviSe: self.prijaviSe,
-      users: self.users
+      users: self.users,
+      addUser: self.addUser
     }
 
 });

@@ -1,3 +1,10 @@
+<div ng-if="users.length == 0">
+  <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
+</div>
+<div ng-if="users" ng-repeat="user in users">
+  <img src="{{user.imageUrl}}" width="50px" height="50px" />
+  <span>{{user.name}}</span>
+  <span ng-if="user.date">{{user.date | date}}</span>
+</div>
 
-
-<h1>{{hello}}</h1>
+<a href="#/add"> Dodaj korisnika </a>
