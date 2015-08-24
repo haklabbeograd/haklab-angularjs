@@ -1,10 +1,20 @@
-<div ng-if="users.length == 0">
+<div ng-if="!radionice && !ovaRadionica">
   <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
 </div>
-<div ng-if="users" ng-repeat="user in users">
-  <img src="{{user.imageUrl}}" width="50px" height="50px" />
-  <span>{{user.name}}</span>
-  <span ng-if="user.date">{{user.date | date}}</span>
+<div ng-if="radionice" ng-repeat="radionica in radionice">
+  <div>
+    <a href="#/{{radionica.id}}">{{radionica.id}}</a>
+  </div>
+  <div>{{radionica.ime}}</div>
+  <div>{{radionica.mesto}}</div>
 </div>
 
-<a href="#/add"> Dodaj korisnika </a>
+<div ng-if="ovaRadionica">
+  <div>
+    <a href="">{{ovaRadionica.id}}</a>
+  </div>
+  <div>{{ovaRadionica.ime}}</div>
+  <div>{{ovaRadionica.mesto}}</div>
+</div>
+
+<a href="#/add"> Dodaj radionicu </a>
