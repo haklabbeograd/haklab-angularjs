@@ -1,20 +1,15 @@
 <div ng-if="!radionice && !ovaRadionica">
   <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
 </div>
+
 <div ng-if="radionice" ng-repeat="radionica in radionice">
-  <div>
-    <a href="#/{{radionica.id}}">{{radionica.id}}</a>
-  </div>
-  <div>{{radionica.ime}}</div>
-  <div>{{radionica.mesto}}</div>
+  <h3><a href="#/{{radionica.id}}">{{radionica.ime}}</a></h3>
+  <p class="text-info">{{radionica.mesto}}</p>
 </div>
 
 <div ng-if="ovaRadionica">
-  <div>
-    <a href="">{{ovaRadionica.id}}</a>
-  </div>
-  <div>{{ovaRadionica.ime}}</div>
-  <div>{{ovaRadionica.mesto}}</div>
+  <h2>{{ovaRadionica.ime}}</h2>
+  <p class="text-info">{{ovaRadionica.mesto}}</p>
 </div>
 
-<a href="#/add"> Dodaj radionicu </a>
+<a href="#/add" class="btn btn-primary"> Dodaj radionicu </a>
