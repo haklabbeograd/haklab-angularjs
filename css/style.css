@@ -1,0 +1,18 @@
+.work-title, 
+.loading, 
+.workshop, 
+.addwork {
+	text-align: center;
+}
+
+.workshop {
+	background-color: rgba(223, 225, 224, 0.5);
+	margin-top: 5px;
+	font-style: Arial; 
+}
+
+.addWork{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+

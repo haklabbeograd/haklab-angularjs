@@ -1,15 +1,26 @@
-<div ng-if="!radionice && !ovaRadionica">
-  <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
+<div class="row">
+	<div class="loading col-lg-8 col-lg-offset-2" ng-if="!radionice && !ovaRadionica">
+	  <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
+	</div>
 </div>
 
-<div ng-if="radionice" ng-repeat="radionica in radionice">
-  <h3><a href="#/{{radionica.id}}">{{radionica.ime}}</a></h3>
-  <p class="text-info">{{radionica.mesto}}</p>
+<div class="row">
+	<h1 class="work-title"> HakLab radionice </h1>
+	<div class="col-lg-8 col-lg-offset-2 workshop" ng-if="radionice" ng-repeat="radionica in radionice">
+	  <h3 class="workshop-title"><a href="#/{{radionica.id}}">{{radionica.ime}}</a></h3>
+	  <p class="workshop-text text-info">{{radionica.mesto}}</p>
+	</div>
 </div>
 
-<div ng-if="ovaRadionica">
-  <h2>{{ovaRadionica.ime}}</h2>
-  <p class="text-info">{{ovaRadionica.mesto}}</p>
+
+<div class="col-lg-8 col-lg-offset-2 workshop" ng-if="ovaRadionica">
+  <h2 class="workshop-title">{{ovaRadionica.ime}}</h2>
+  <p class="workshop-text text-info">{{ovaRadionica.mesto}}</p>
 </div>
 
-<a href="#/add" class="btn btn-primary"> Dodaj radionicu </a>
+
+<div class="row">
+	<div class="addWork col-lg-8 col-lg-offset-2">
+		<a href="#/add" class="btn btn-primary"> Dodaj radionicu </a>
+	</div>
+</div>
