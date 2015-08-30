@@ -2,10 +2,10 @@
   <img src="http://www.arabianbusiness.com/skins/ab.main/gfx/loading_spinner.gif"/>
 </div>
 
-<div ng-if="radionice" ng-repeat="radionica in radionice">
-  <h3><a href="#/{{radionica.id}}">{{radionica.ime}}</a></h3>
-  <p class="text-info">{{radionica.mesto}}</p>
-</div>
+<section ng-if="radionice" ng-repeat="radionica in radionice" class="page{{radionica.id}}">
+	<h3><a href="#/{{radionica.id}}">{{radionica.ime}}</a></h3>
+	<p class="text-info">{{radionica.mesto}}</p>
+</section>
 
 <div ng-if="ovaRadionica">
   <h2>{{ovaRadionica.ime}}</h2>

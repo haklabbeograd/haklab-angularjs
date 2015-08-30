@@ -4,9 +4,9 @@ angular.module('haklab').controller('MainController',function($scope, RadioniceS
 
   $scope.radionice = null;
 
-  RadioniceServis.dodaj().then(function(){
+  // RadioniceServis.dodaj().then(function(){
 
-  });
+  // });
 
   if(id != null){
     RadioniceServis.radionica(id).then(function(response){
