@@ -7,14 +7,15 @@ app.config(function($routeProvider){
       controller: 'MainController',
       templateUrl: 'views/home.html'
     })
-    .when('/:broj',{
+    .when('/workshop',{
+      controller: 'WorkshopController',
+      templateUrl: 'views/workshop.html'
+    })
+    .when('/:id',{
       controller: 'MainController',
       templateUrl: 'views/home.html'
     })
-    .when('/add',{
-      controller: 'AddController',
-      templateUrl: 'views/add.html'
-    })
+
     .otherwise('/');
 
 });

@@ -1,20 +1,35 @@
 <html ng-app="haklab">
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+
     <script src="index.js"></script>
 
-    <script src="service/RadioniceServis.js"></script>
+    <script src="service/WorkshopService.js"></script>
+
+
     <script src="controllers/MainController.js"></script>
+    <script src="controllers/WorkshopController.js"></script>
     <script src="controllers/AddController.js"></script>
 
 
   </head>
   <body>
-    <div ng-view class="container">
-		
-    </div>
+    <header>
+      <img src="" />
+      <ul>
+        <li>O nama</li>
+        <li>Radionice</li>
+        <li>Dogadjaji</li>
+        <li>Donacije</li>
+        <li>Kontakt</li>
+      </ul>
+    </header>
+
+    <div ng-view class="container"></div>
+
   </body>
 </htmL>

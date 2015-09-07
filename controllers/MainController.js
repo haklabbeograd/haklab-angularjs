@@ -1,18 +1,18 @@
 'use strict';
 
-angular.module('haklab').controller('MainController', function($scope, RadioniceServis, $routeParams) {
+angular.module('haklab').controller('MainController', function($scope, WorkshopService, $routeParams) {
 
-  var id = $routeParams.broj || null;
+  var id = $routeParams.id || null;
 
   $scope.radionice = null;
 
 
   if (id !== null) {
-    RadioniceServis.radionica(id).then(function(response) {
+    WorkshopService.get(id).then(function(response) {
       $scope.ovaRadionica = response.data;
     });
   } else {
-    RadioniceServis.radionice().then(function(response) {
+    WorkshopService.getAll().then(function(response) {
       $scope.radionice = response.data;
     });
   }

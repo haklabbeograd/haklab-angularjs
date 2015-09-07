@@ -1,18 +1,25 @@
-.work-title, 
-.loading, 
-.workshop, 
+body{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.work-title,
+.loading,
+.workshop,
 .addwork {
 	text-align: center;
 }
 
 .workshop {
-	background-color: rgba(223, 225, 224, 0.5);
-	margin-top: 5px;
-	font-style: Arial; 
+	margin-bottom: 10px;
+}
+
+.workshop-inner {
+		background-color: rgba(223, 225, 224, 0.5);
+		padding: 5px;
 }
 
 .addWork{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
-
