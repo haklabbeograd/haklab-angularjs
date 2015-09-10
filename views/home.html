@@ -31,7 +31,7 @@
 
 <div class="row">
 	<h1 class="work-title"> Događaji </h1>
-	<div class="col-lg-6 workshop col-md-6  workshop" ng-if="workshop" ng-repeat="event in events">
+	<div class="col-lg-6 workshop col-md-6  workshop" ng-if="events" ng-repeat="event in events">
 	  <div class="workshop-inner">
 			<h3 class="workshop-title"><a href="#/{{event.id}}">{{event.ime}}</a></h3>
 			<img class="col-md-12 workshop-image img-responsive" src="{{event.img}}"/>
