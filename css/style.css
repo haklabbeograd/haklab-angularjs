@@ -3,6 +3,19 @@ body{
 	font-weight: 300;
 }
 
+#menu {
+	font-size: 120%;
+}
+
+li {
+	background-color: white;
+}
+
+li:hover {
+	background-color: rgba(175, 213, 238, 1);
+	transition: background-color 0.5s ease-in-out;
+}
+
 .work-title,
 .loading,
 .workshop,
@@ -15,11 +28,26 @@ body{
 }
 
 .workshop-inner {
-		background-color: rgba(223, 225, 224, 0.5);
-		padding: 5px;
+	background-color: rgba(223, 225, 224, 0.5);
+	padding: 5px;
 }
 
 .addWork{
 	margin-top: 10px;
 	margin-bottom: 20px;
 }
+
+@media (min-width: 768px){
+    .navbar-nav {
+        margin: 0 auto;
+        display: table;
+        table-layout: auto;
+        float: none;
+        width: 100%;
+    }
+    .navbar-nav>li {
+        display: table-cell;
+        float: none;
+        text-align: center;
+    }
+} 
