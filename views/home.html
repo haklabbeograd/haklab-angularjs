@@ -25,7 +25,7 @@
 
 <div class="row">
 	<div class="addWork col-lg-8 col-lg-offset-2">
-		<a href="#/add" class="btn btn-primary"> Dodaj radionicu </a>
+      <a href="#/add" class="btn btn-primary"> Dodaj radionicu </a>
 	</div>
 </div>
 
@@ -33,7 +33,7 @@
 	<h1 class="work-title"> Događaji </h1>
 	<div class="col-lg-6 workshop col-md-6  workshop" ng-if="workshop" ng-repeat="event in events">
 	  <div class="workshop-inner">
-			<h3 class="workshop-title"><a href="#/{{radionica.id}}">{{event.ime}}</a></h3>
+			<h3 class="workshop-title"><a href="#/{{event.id}}">{{event.ime}}</a></h3>
 			<img class="col-md-12 workshop-image img-responsive" src="{{event.img}}"/>
 		  <p class="workshop-text text-info">{{event.mesto}}</p>
 		</div>
