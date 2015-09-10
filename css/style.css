@@ -23,6 +23,20 @@ li:hover {
 	text-align: center;
 }
 
+.title {
+	transition-duration: 2s;
+}
+
+.title:hover {
+	display:inline-block;
+    transform:scale(1.25,1); /* W3C */
+    -webkit-transform:scale(1.25,1); /* Safari and Chrome */
+    -moz-transform:scale(1.25,1); /* Firefox */
+    -ms-transform:scale(1.25,1); /* IE 9 */
+    -o-transform:scale(1.25,1);
+	text-decoration: none;	
+}
+
 .workshop {
 	margin-bottom: 10px;
 }
