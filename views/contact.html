@@ -1,0 +1,12 @@
+<form ng-submit="submitForm()" class="col-md-6">
+  <div class="input-group">
+    <input class="form-control" type="text" placeholder="Ime" ng-model="req.name" required>
+  </div>
+
+  <div class="input-group">
+    <input class="form-control" type="email" placeholder="E-mail" ng-model="req.email" required>
+  </div>
+
+  <textarea ng-model="req.content"></textarea required>
+  <button class="btn btn-success" type="submit">Posalji</button>
+</form>
