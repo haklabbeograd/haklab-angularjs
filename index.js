@@ -33,3 +33,7 @@ app.config(function($routeProvider){
     .otherwise('/');
 
 });
+
+app.constant("CONFIG", {
+        "url": "http://haklab.herokuapp.com",
+    })
