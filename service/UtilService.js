@@ -1,5 +1,8 @@
 'use strict';
-angular.module('haklab').service('UtilService', function($http, CONFIG) {
+angular.module('haklab').service('UtilService', UtilService);
+
+
+function UtilService($http, CONFIG) {
 
   var self = this;
 
@@ -9,5 +12,4 @@ angular.module('haklab').service('UtilService', function($http, CONFIG) {
 
   return self;
 
-
-});
+}   // UtilService

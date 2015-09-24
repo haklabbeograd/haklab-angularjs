@@ -1,5 +1,8 @@
 'use strict';
-angular.module('haklab').service('EventService', function($http, CONFIG) {
+angular.module('haklab').service('EventService', EventService);
+
+
+function EventService($http, CONFIG) {
 
   var self = this;
 
@@ -17,5 +20,4 @@ angular.module('haklab').service('EventService', function($http, CONFIG) {
 
   return self;
 
-
-});
+}   // EventService

@@ -1,5 +1,8 @@
 'use strict';
-angular.module('haklab').service('RadioniceServis', function($http) {
+angular.module('haklab').service('RadioniceServis', RadioniceServis);
+
+
+function RadioniceServis($http) {
   var self = this;
   this.dohvatiRadionice = function() {
     return $http.get('https://haklab.herokuapp.com/radionice');
@@ -19,5 +22,4 @@ angular.module('haklab').service('RadioniceServis', function($http) {
     dodaj: self.dodajRadionicu
   };
 
-
-});
+}   // RadioniceServis

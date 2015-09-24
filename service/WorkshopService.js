@@ -1,5 +1,8 @@
 'use strict';
-angular.module('haklab').service('WorkshopService', function($http, CONFIG) {
+angular.module('haklab').service('WorkshopService', WorkshopService);
+
+
+function WorkshopService($http, CONFIG) {
 
   var self = this;
 
@@ -17,5 +20,4 @@ angular.module('haklab').service('WorkshopService', function($http, CONFIG) {
 
   return self;
 
-
-});
+}   // WorkshopService
