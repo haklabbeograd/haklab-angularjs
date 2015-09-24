@@ -1,5 +1,5 @@
 'use strict';
-angular.module('haklab').service('WorkshopService', WorkshopService);
+angular.module('haklab').service('WorkshopService', ['$http', 'CONFIG', WorkshopService]);
 
 
 function WorkshopService($http, CONFIG) {
@@ -11,11 +11,11 @@ function WorkshopService($http, CONFIG) {
   };
 
   this.get = function(id) {
-    return $http.get(CONGIF.url + '/radionice/' + id);
+    return $http.get(CONFIG.url + '/radionice/' + id);
   };
 
   this.add = function() {
-    return $http.get(CONGIF.url + '/test?ime=logika');
+    return $http.get(CONFIG.url + '/test?ime=logika');
   };
 
   return self;
