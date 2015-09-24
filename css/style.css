@@ -34,7 +34,7 @@ li:hover {
     -moz-transform:scale(1.25,1); /* Firefox */
     -ms-transform:scale(1.25,1); /* IE 9 */
     -o-transform:scale(1.25,1);
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .workshop {
@@ -51,6 +51,14 @@ li:hover {
 	margin-bottom: 20px;
 }
 
+.navbar-brand {
+	max-width:100px;
+}
+
+.navbar-brand img {
+	width: 100%;
+}
+
 @media (min-width: 768px){
     .navbar-nav {
         margin: 0 auto;
@@ -64,4 +72,4 @@ li:hover {
         float: none;
         text-align: center;
     }
-} 
+}

@@ -1,13 +1,15 @@
-<html ng-app="haklab">
-  <head>
+<!DOCTYPE html>
+<html lang="sr" ng-app="haklab">
+
+<head>
     <meta charset="utf-8">
     <title>Haklab Beograd</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-	<link rel="stylesheet" href="css/style.css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
 
@@ -23,34 +25,41 @@
     <script src="controllers/ContactController.js"></script>
     <script src="controllers/AddController.js"></script>
 
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-		<nav class="navbar navbar-default">
-		  <div class="container">
-			  <div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-elements">
-				  <span class="sr-only">Toggle navigation</span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				</button>
-              </div>
-			  <div class="collapse navbar-collapse" id="navigation-elements">
-			    <ul class="nav navbar-nav" id="menu">
-				  <li><a href="#/about">O nama</a></li>
-				  <li><a href="#/workshop">Radionice</a></li>
-				  <li><a href="#/event">Dogadjaji</a></li>
-				  <li><a href="#/donations">Donacije</a></li>
-				  <li><a href="#/contact">Kontakt</a></li>
-			    </ul>
-			  </div>
-			</div>
-		  </div>
-		</nav>
+        <nav class="navbar navbar-default">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-elements">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#/">
+                        <img src="img/hklbgd.png" alt="logo" />
+                    </a>
+                </div><!-- navbar-header -->
+
+                <div class="collapse navbar-collapse" id="navigation-elements">
+                    <ul class="nav navbar-nav" id="menu">
+                        <li><a href="#/about">O nama</a></li>
+                        <li><a href="#/workshop">Radionice</a></li>
+                        <li><a href="#/event">Dogadjaji</a></li>
+                        <li><a href="#/donations">Donacije</a></li>
+                        <li><a href="#/contact">Kontakt</a></li>
+                    </ul>
+                </div><!-- navigation-elements -->
+
+            </div><!-- container -->
+        </nav>
     </header>
 
     <div ng-view class="container"></div>
 
-  </body>
-</htmL>
+</body>
+</html>
