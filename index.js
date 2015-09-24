@@ -36,4 +36,4 @@ app.config(function($routeProvider){
 
 app.constant("CONFIG", {
         "url": "http://haklab.herokuapp.com",
-    })
+    });

@@ -1,11 +1,11 @@
 'use strict';
+angular.module('haklab').controller('MainController', MainController);
 
-angular.module('haklab').controller('MainController', function($scope, WorkshopService, $routeParams) {
+
+function MainController($scope, WorkshopService, $routeParams) {
 
   var id = $routeParams.id || null;
-
   $scope.radionice = null;
-
 
   if (id !== null) {
     WorkshopService.get(id).then(function(response) {
@@ -16,4 +16,5 @@ angular.module('haklab').controller('MainController', function($scope, WorkshopS
       $scope.radionice = response.data;
     });
   }
-});
+
+}   // MainController
