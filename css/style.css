@@ -1,5 +1,5 @@
 body{
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 
@@ -21,6 +21,11 @@ li:hover {
 .workshop,
 .addwork {
 	text-align: center;
+}
+
+.work-title {
+	box-shadow: 3px 3px 10px 5px #E0E0E0;
+	color: #777;
 }
 
 .title {
