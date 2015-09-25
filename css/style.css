@@ -18,6 +18,7 @@ body {
 .work-title {
 	box-shadow: 3px 3px 10px 5px #E0E0E0;
 	color: #777;
+	opacity: 0.7;
 }
 
 .title {
@@ -55,16 +56,21 @@ body {
 	font-size: 120%;
 }
 
-/*.header li {
+.nav>li>a {
 	background-color: white;
 }
 
-.header li:hover {
+.nav>li>a:hover {
 	background-color: rgba(175, 213, 238, 1);
 	transition: background-color 0.5s ease-in-out;
-}*/
+}
+
+.header .nav-justified > li > a {
+	padding-top: 10%; 
+}
 
 .header .nav-justified > li > a,		/* menu items */
 .header-logo {
-	height: 50px;
+	height: 70px; 
 }
+
