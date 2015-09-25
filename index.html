@@ -6,9 +6,11 @@
     <title>Haklab Beograd</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
@@ -29,26 +31,24 @@
 </head>
 
 <body>
-    <header>
-		
-        <nav class="navbar navbar-default">
+    <header class="header">
+        <nav class="navbar navbar-default"><!-- try also navbar-inverse -->
             <div class="container">
-				
+
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-elements">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">Mobile navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <div class="logo-wrapper">
+                        <a href="#/"><img class="header-logo" src="img/haklab-logo.png" alt="logo" /></a>
+                    </div>
+                </div>
 
-                </div><!-- navbar-header -->
-
-                <div class="collapse navbar-collapse" id="navigation-elements">
-                    <ul class="nav navbar-nav" id="menu">
-						<a class="navbar-brand" href="#/">
-							<img src="img/hklbgd.png" alt="logo" />
-						</a>
+                <div id="navigation-elements" class="collapse navbar-collapse">
+                    <ul class="nav nav-justified" id="menu">
                         <li><a href="#/about">O NAMA</a></li>
                         <li><a href="#/workshop">RADIONICE</a></li>
                         <li><a href="#/event">DOGAĐAJI</a></li>
@@ -57,7 +57,7 @@
                     </ul>
                 </div><!-- navigation-elements -->
 
-            </div><!-- container -->
+            </div>
         </nav>
     </header>
 

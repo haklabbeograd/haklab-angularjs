@@ -1,20 +1,12 @@
-body{
+
+/* MAIN ELEMENTS */
+
+body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 }
 
-#menu {
-	font-size: 120%;
-}
-
-li {
-	background-color: white;
-}
-
-li:hover {
-	background-color: rgba(175, 213, 238, 1);
-	transition: background-color 0.5s ease-in-out;
-}
+/* MAIN CLASSES */
 
 .work-title,
 .loading,
@@ -56,25 +48,23 @@ li:hover {
 	margin-bottom: 20px;
 }
 
-.navbar-brand {
-	max-width:100px;
+
+/* HEADER */
+
+#menu {
+	font-size: 120%;
 }
 
-.navbar-brand img {
-	width: 100%;
+/*.header li {
+	background-color: white;
 }
 
-@media (min-width: 768px){
-    .navbar-nav {
-        margin: 0 auto;
-        display: table;
-        table-layout: auto;
-        float: none;
-        width: 100%;
-    }
-    .navbar-nav>li {
-        display: table-cell;
-        float: none;
-        text-align: center;
-    }
+.header li:hover {
+	background-color: rgba(175, 213, 238, 1);
+	transition: background-color 0.5s ease-in-out;
+}*/
+
+.header .nav-justified > li > a,		/* menu items */
+.header-logo {
+	height: 50px;
 }
