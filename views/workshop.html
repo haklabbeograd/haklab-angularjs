@@ -1,1 +1,10 @@
-{{hello}}
+<div class="row">
+	<h1 class="work-title"> RADIONICE </h1>
+	<div class="col-lg-6 workshop col-md-6  workshop" ng-if="radionice" ng-repeat="radionica in radionice">
+	  <div class="workshop-inner">
+			<h3 class="workshop-title"><a href="#/{{radionica.id}}" class="title">{{radionica.ime}}</a></h3>
+			<img class="col-md-12 workshop-image img-responsive" src="{{radionica.img}}"/>
+		  <p class="workshop-text text-info">{{radionica.mesto}}</p>
+		</div>
+	</div>
+</div>

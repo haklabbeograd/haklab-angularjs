@@ -15,20 +15,20 @@ app.config(function($routeProvider){
       controller: 'EventController',
       templateUrl: 'views/event.html'
     })
-  .when('/about',{
-    templateUrl: 'views/about.html'
-  })
-  .when('/donations',{
-    templateUrl: 'views/donations.html'
-  })
-  .when('/contact',{
-    controller: 'ContactController',
-    templateUrl: 'views/contact.html'
-  })
-  .when('/:id',{
-    controller: 'MainController',
-    templateUrl: 'views/home.html'
-	 })
+      .when('/about',{
+      templateUrl: 'views/about.html'
+    })
+      .when('/donations',{
+      templateUrl: 'views/donations.html'
+    })
+      .when('/contact',{
+      controller: 'ContactController',
+      templateUrl: 'views/contact.html'
+    })
+    .when('/:id',{
+      controller: 'MainController',
+      templateUrl: 'views/home.html'
+	})
 
     .otherwise('/');
 
