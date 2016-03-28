@@ -1,4 +1,3 @@
-angular.module('haklab').controller('AddController',function($scope){
+angular.module('haklab').controller('AddController', ['$scope', function($scope){
 
-
-});
+}]);

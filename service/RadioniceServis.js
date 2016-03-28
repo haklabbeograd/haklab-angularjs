@@ -1,6 +1,7 @@
 'use strict';
 angular.module('haklab').service('RadioniceServis', RadioniceServis);
 
+RadioniceServis.$inject = ['$http'];
 
 function RadioniceServis($http) {
   var self = this;

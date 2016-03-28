@@ -1,6 +1,7 @@
 'use strict';
 angular.module('haklab').controller('MainController', MainController);
 
+MainController.$inject = ['$scope', 'WorkshopService', '$routeParams'];
 
 function MainController($scope, WorkshopService, $routeParams) {
 
