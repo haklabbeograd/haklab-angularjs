@@ -1,6 +1,7 @@
 'use strict';
 angular.module('haklab').service('EventService', EventService);
 
+EventService.$inject = ['$http', 'CONFIG'];
 
 function EventService($http, CONFIG) {
 

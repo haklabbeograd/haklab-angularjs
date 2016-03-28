@@ -1,6 +1,7 @@
 'use strict';
 angular.module('haklab').service('UtilService', UtilService);
 
+UtilService.$inject = ['$http', 'CONFIG'];
 
 function UtilService($http, CONFIG) {
 

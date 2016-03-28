@@ -1,5 +1,6 @@
 angular.module('haklab').controller('ContactController', ContactController);
 
+ContactController.$inject = ['$scope', 'UtilService'];
 
 function ContactController($scope, UtilService){
 

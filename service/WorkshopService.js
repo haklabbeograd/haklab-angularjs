@@ -1,6 +1,7 @@
 'use strict';
 angular.module('haklab').service('WorkshopService', ['$http', 'CONFIG', WorkshopService]);
 
+WorkshopService.$inject = ['$http', 'CONFIG'];
 
 function WorkshopService($http, CONFIG) {
 
